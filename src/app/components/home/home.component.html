@@ -1,0 +1,27 @@
+<div>
+    <p>Home Component</p>
+    <h2>Without named router outlet</h2>
+    <ul>
+        <li>
+            <a routerLink="/home/mobile">mobile</a>
+        </li><li>
+            <a routerLink="/home/tv">tv</a>
+        </li>
+    </ul>
+
+    <button (click)="goToProducts();">Go to Products</button>
+    <h2>With named router outlet</h2>
+    <!-- <ul>
+        <li>
+            <a [routerLink]="[{outlets:{'mobile':['mobile']}}]">Go to Mobile</a>
+          
+        </li>
+        <li>
+            <a [routerLink]="[{outlets:{'tv':['tv']}}]">Go to TV</a>
+        </li>
+    </ul> -->
+
+</div>
+<router-outlet></router-outlet>
+<!-- <router-outlet name="mobile"></router-outlet>
+<router-outlet name="tv"></router-outlet> -->
